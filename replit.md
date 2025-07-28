@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack portfolio website built with React, TypeScript, and Express. The application showcases a developer's skills, projects, and contact information with a clean, professional design. It features a contact form that allows visitors to send messages, which are stored in a PostgreSQL database.
+This is a modern full-stack portfolio website built with React, TypeScript, and Express. The application showcases a developer's skills, projects, and contact information with a clean, professional design inspired by aaspinwall.com. It features multiple pages with smooth navigation, a contact form that stores visitor messages, and responsive design with floating cloud animations.
 
 ## User Preferences
 
@@ -22,11 +22,12 @@ The application follows a monorepo structure with clear separation between clien
 
 ### Frontend Architecture
 - **Framework**: React 18 with TypeScript
-- **Routing**: Wouter for lightweight client-side routing
+- **Routing**: Wouter for lightweight client-side routing with multi-page support
 - **State Management**: TanStack Query for server state management
 - **UI Components**: shadcn/ui component library built on Radix UI
-- **Styling**: Tailwind CSS with custom design tokens for portfolio branding
+- **Styling**: Tailwind CSS with custom design tokens inspired by aaspinwall.com
 - **Forms**: React Hook Form with Zod validation
+- **Navigation**: Smooth scrolling within pages and proper routing between pages
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js framework

@@ -1,10 +1,32 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { useLocation } from "wouter";
 
 export default function Footer() {
+  const [location] = useLocation();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleNavigation = (target: string) => {
+    if (target === 'about') {
+      // Navigate to about page using Wouter
+      window.history.pushState({}, '', '/about');
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    } else {
+      // For other sections, check if we're on home page
+      if (location !== '/') {
+        // Navigate to home page first, then scroll
+        window.history.pushState({}, '', '/');
+        window.dispatchEvent(new PopStateEvent('popstate'));
+        setTimeout(() => scrollToSection(target), 100);
+      } else {
+        // We're on home page, just scroll
+        scrollToSection(target);
+      }
     }
   };
 
@@ -23,25 +45,25 @@ export default function Footer() {
             <h4 className="font-serif text-xl font-semibold mb-4">Quick Links</h4>
             <div className="space-y-2">
               <button 
-                onClick={() => scrollToSection('about')} 
+                onClick={() => handleNavigation('about')} 
                 className="block text-gray-300 hover:text-white transition-colors"
               >
                 About
               </button>
               <button 
-                onClick={() => scrollToSection('skills')} 
+                onClick={() => handleNavigation('skills')} 
                 className="block text-gray-300 hover:text-white transition-colors"
               >
                 Skills
               </button>
               <button 
-                onClick={() => scrollToSection('projects')} 
+                onClick={() => handleNavigation('projects')} 
                 className="block text-gray-300 hover:text-white transition-colors"
               >
                 Projects
               </button>
               <button 
-                onClick={() => scrollToSection('contact')} 
+                onClick={() => handleNavigation('contact')} 
                 className="block text-gray-300 hover:text-white transition-colors"
               >
                 Contact
