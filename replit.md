@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a modern full-stack portfolio website built with React, TypeScript, and Express. The application showcases a developer's skills, projects, and contact information with a clean, professional design inspired by aaspinwall.com. It features multiple pages with smooth navigation, a contact form that stores visitor messages, and responsive design with floating cloud animations.
+This is a modern client-side portfolio website built with React, TypeScript, and Vite. The application showcases a developer's skills, projects, and contact information with a clean, professional design inspired by aaspinwall.com. It features multiple pages with smooth navigation, responsive design with floating cloud animations, and a simplified static architecture.
 
 ## User Preferences
 
@@ -10,13 +10,13 @@ Preferred communication style: Simple, everyday language.
 
 ## System Architecture
 
-The application follows a monorepo structure with clear separation between client, server, and shared components:
+The application follows a simplified client-side structure:
 
 - **Frontend**: React SPA with TypeScript, styled using Tailwind CSS and shadcn/ui components
-- **Backend**: Express.js REST API with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
+- **Backend**: None - Pure client-side static website
+- **Database**: None - Static content only
 - **Build System**: Vite for frontend bundling and development
-- **Deployment**: Production-ready build pipeline with esbuild for server bundling
+- **Deployment**: Static site deployment ready for platforms like Vercel, Netlify, or GitHub Pages
 
 ## Key Components
 
@@ -29,46 +29,32 @@ The application follows a monorepo structure with clear separation between clien
 - **Forms**: React Hook Form with Zod validation
 - **Navigation**: Smooth scrolling within pages and proper routing between pages
 
-### Backend Architecture
-- **Runtime**: Node.js with Express.js framework
-- **Language**: TypeScript with ES modules
-- **Database ORM**: Drizzle ORM for type-safe database operations
-- **Validation**: Zod schemas for request validation
-- **Storage**: Configurable storage layer (currently in-memory with PostgreSQL ready)
-
-### Database Schema
-- **Users Table**: Basic user authentication structure (id, username, password)
-- **Contacts Table**: Contact form submissions (id, name, email, message, createdAt)
-- **Database**: PostgreSQL with Drizzle migrations support
-
 ## Data Flow
 
-1. **Contact Form Submission**: 
-   - User fills out contact form on frontend
-   - Form validation using Zod schema
-   - Data sent to `/api/contact` endpoint
-   - Server validates and stores in database
-   - Success/error response with toast notifications
-
-2. **Portfolio Display**:
+1. **Portfolio Display**:
    - Static content rendered on client-side
    - Smooth scrolling navigation between sections
    - Responsive design for mobile and desktop
+   - Multi-page routing with Wouter
+
+2. **Contact Section**:
+   - Simple contact information display
+   - Direct email links for communication
+   - No backend dependencies - ready for integration with services like Formspree or EmailJS
 
 3. **Development Workflow**:
    - Vite dev server for frontend with HMR
-   - Express server with request logging
-   - Database migrations with Drizzle Kit
+   - TypeScript compilation and checking
+   - Hot module replacement for fast development
 
 ## External Dependencies
 
 ### Core Technologies
 - **React Ecosystem**: React, React DOM, React Hook Form
-- **Database**: Neon Database (serverless PostgreSQL), Drizzle ORM
 - **UI Framework**: Radix UI primitives, Tailwind CSS
-- **Development Tools**: Vite, TypeScript, ESBuild
+- **Development Tools**: Vite, TypeScript
 - **Validation**: Zod for schema validation
-- **HTTP Client**: TanStack Query for API calls
+- **Routing**: Wouter for lightweight client-side routing
 
 ### UI Components
 - Comprehensive shadcn/ui component library
@@ -79,21 +65,20 @@ The application follows a monorepo structure with clear separation between clien
 ## Deployment Strategy
 
 ### Development
-- Vite dev server serves the React application
-- Express server runs API endpoints
+- Vite dev server serves the React application on port 5000
 - Hot module replacement for fast development
 - TypeScript compilation checking
+- No backend dependencies
 
 ### Production Build
-1. **Frontend**: Vite builds optimized React bundle to `dist/public`
-2. **Backend**: ESBuild bundles Express server to `dist/index.js`
-3. **Database**: Drizzle migrations applied via `db:push` command
-4. **Environment**: Uses DATABASE_URL environment variable for PostgreSQL connection
+1. **Frontend**: Vite builds optimized React bundle to `dist/`
+2. **Static Deployment**: Ready for deployment to static hosting platforms
+3. **No Database**: All content is static and embedded in the application
 
 ### Environment Configuration
-- Development: In-memory storage for quick iteration
-- Production: PostgreSQL database with connection pooling
-- Static asset serving through Express in production
-- Error handling with proper HTTP status codes
+- Development: Vite dev server with HMR
+- Production: Static file serving from any web server
+- No environment variables needed for basic functionality
+- Contact form ready for integration with third-party services
 
-The application is designed to be deployed on platforms like Replit, with built-in support for the Replit environment including development banners and cartographer integration for debugging.
+The application is designed to be deployed as a static site on platforms like Vercel, Netlify, GitHub Pages, or Replit Static Sites, with built-in support for the Replit environment including development banners and cartographer integration for debugging.
