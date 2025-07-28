@@ -35,7 +35,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="relative z-10 bg-white/90 backdrop-blur-sm border-b border-gray-100 sticky top-0">
+    <nav className="relative z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100 sticky top-0">
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <Link href="/">

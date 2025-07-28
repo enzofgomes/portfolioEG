@@ -1,9 +1,11 @@
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import FloatingClouds from "@/components/ui/floating-clouds";
 
 export default function HeroSection() {
   return (
-    <section className="relative z-10 py-20 md:py-32">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative z-10 py-20 md:py-32 overflow-hidden">
+      <FloatingClouds />
+      <div className="max-w-6xl mx-auto px-6 relative z-20">
         <div className="text-center">
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-text mb-8 leading-tight">
             Hi,<br />

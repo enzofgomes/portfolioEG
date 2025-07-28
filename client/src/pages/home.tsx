@@ -9,7 +9,6 @@ import Footer from "@/components/ui/footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white text-portfolio-text">
-      <FloatingClouds />
       <Navigation />
       <HeroSection />
       <section id="about" className="relative z-10 py-20">

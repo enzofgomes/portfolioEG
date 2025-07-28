@@ -9,7 +9,7 @@ export default function FloatingClouds() {
   ];
 
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none">
+    <div className="absolute inset-0 z-0 pointer-events-none">
       {clouds.map((cloud, index) => (
         <div
           key={index}

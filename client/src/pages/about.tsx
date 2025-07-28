@@ -1,6 +1,5 @@
 import Navigation from "@/components/ui/navigation";
 import Footer from "@/components/ui/footer";
-import FloatingClouds from "@/components/ui/floating-clouds";
 import { Calendar, MapPin, Code, Heart } from "lucide-react";
 import { useEffect } from "react";
 
@@ -61,7 +60,6 @@ export default function About() {
 
   return (
     <div className="min-h-screen bg-white text-portfolio-text">
-      <FloatingClouds />
       <Navigation />
       
       <main className="relative z-10">
