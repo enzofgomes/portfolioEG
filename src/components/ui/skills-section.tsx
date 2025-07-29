@@ -29,8 +29,8 @@ export default function SkillsSection() {
           
           <div className="text-center lg:text-left">
             <img 
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400" 
-              alt="Professional headshot" 
+              src="assets/profile-picture.png" 
+              alt="My picture" 
               className="w-64 h-64 rounded-2xl shadow-lg mx-auto lg:mx-0 mb-8 object-cover" 
             />
             
