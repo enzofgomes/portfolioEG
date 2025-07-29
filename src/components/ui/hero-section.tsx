@@ -9,14 +9,14 @@ export default function HeroSection() {
         <div className="text-center">
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-text mb-8 leading-tight">
             Hi,<br />
-            I'm <span className="text-portfolio-primary">Alex</span><br />
+            I'm <span className="text-portfolio-primary">Enzo</span><br />
             <span className="text-portfolio-muted">Software</span><br />
-            <span className="font-sans font-normal text-3xl md:text-4xl">Engineer</span>
+            <span className="font-sans font-normal text-3xl md:text-4xl">Developer</span>
           </h1>
           
           <div className="flex justify-center space-x-6 mb-12">
             <a 
-              href="https://github.com" 
+              href="https://github.com/enzofgomes" 
               className="text-portfolio-muted hover:text-portfolio-text transition-colors text-xl"
               target="_blank"
               rel="noopener noreferrer"
@@ -24,20 +24,12 @@ export default function HeroSection() {
               <Github className="w-6 h-6" />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/enzo-gomes07" 
               className="text-portfolio-muted hover:text-portfolio-text transition-colors text-xl"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Linkedin className="w-6 h-6" />
-            </a>
-            <a 
-              href="https://twitter.com" 
-              className="text-portfolio-muted hover:text-portfolio-text transition-colors text-xl"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Twitter className="w-6 h-6" />
             </a>
             <a 
               href="mailto:contact@example.com" 
@@ -48,7 +40,8 @@ export default function HeroSection() {
           </div>
 
           <p className="text-lg md:text-xl text-portfolio-muted max-w-2xl mx-auto leading-relaxed">
-            I love exploring and creating 🚀 I'm a lifelong learner 🎓 and I might have a thing for traditional Neapolitan Pizza 🍕
+            Nice to meet you! <br />
+            I love being creative, i am always looking to learn new technologies and expand my skill set building innovative software 🤓
           </p>
         </div>
       </div>
