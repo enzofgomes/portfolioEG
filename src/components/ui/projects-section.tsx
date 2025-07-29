@@ -9,7 +9,7 @@ export default function ProjectsSection() {
       description: "A Flask-based web application that allows users to search for detailed stock market data using the Yahoo Finance API. Built with Python and Flask, the app retrieves real-time stock information and displays it in a clean, user-friendly interface.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
       imageAlt: "Refy mortgage broker application dashboard",
-      link: "https://github.com/enzofgomes/StockTracker"
+      link: ""
     },
     {
       category: "Personal Project",
