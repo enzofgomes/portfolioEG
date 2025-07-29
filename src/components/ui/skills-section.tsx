@@ -1,8 +1,7 @@
 export default function SkillsSection() {
   const technologies = [
-    "TypeScript", "AWS", "React", "Go", "Java", "Node.js", 
-    "Python", "Next.js", "GraphQL", "MongoDB", "PostgreSQL", 
-    "Firebase", "WordPress", "Shopify", "HTML", "CSS"
+    "TypeScript", "React", "Node.js", "Flask", "Next.js", "Vite", "CSS", "JavaScript", "Java", 
+    "Python", "HTML", "PostgreSQL", "MySQL", "Docker", "GitHub", "Tailwind CSS"
   ];
 
   return (
@@ -39,7 +38,8 @@ export default function SkillsSection() {
             </h3>
             <p className="text-portfolio-muted leading-relaxed mb-6">
               I'm a highly dedicated software developer currently completing my bachelor's degree in IT at Florida International University. 
-            I started playing with computers when I was little, and since then I've been exploring technologies. Building software has always been my dream.
+              I have always had a deep fascination with how things worked. I started playing with computers when I was little, and since then
+              I've been exploring the world of software. Making solutions has always felt second nature to me.
             </p>
             <a
             href="/about"

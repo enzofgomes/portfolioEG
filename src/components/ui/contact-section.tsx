@@ -12,28 +12,19 @@ export default function ContactSection() {
         
         <div className="mb-12">
           <a 
-            href="mailto:contact@example.com" 
+            href="mailto:enzoogo07@gmail.com" 
             className="text-2xl md:text-3xl text-portfolio-muted hover:text-portfolio-text transition-colors mb-8 block"
           >
-            contact@example.com
+            enzoogo07@gmail.com
           </a>
           
           <a 
-            href="mailto:contact@example.com" 
+            href="mailto:enzoogo07@gmail.com" 
             className="inline-flex items-center px-8 py-4 bg-portfolio-primary text-white rounded-full font-medium text-lg hover:bg-portfolio-accent transition-colors"
           >
             Get in touch
             <ArrowRight className="w-5 h-5 ml-3" />
           </a>
-        </div>
-
-        <div className="bg-white rounded-2xl p-8 shadow-lg max-w-2xl mx-auto">
-          <h3 className="font-serif text-2xl font-semibold text-portfolio-text mb-6">
-            Send me a message
-          </h3>
-          <p className="text-portfolio-muted mb-6">
-            Contact form coming soon! For now, please reach out directly via email.
-          </p>
         </div>
       </div>
     </section>

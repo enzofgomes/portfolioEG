@@ -33,49 +33,12 @@ export default function Footer() {
   return (
     <footer className="relative z-10 bg-portfolio-text text-white py-12">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-3 gap-8">
-          <div>
-            <h4 className="font-serif text-xl font-semibold mb-4">Portfolio</h4>
-            <p className="text-gray-300 leading-relaxed">
-              Full Stack Developer specializing in modern web technologies and user-centered design.
-            </p>
-          </div>
-          
-          <div>
-            <h4 className="font-serif text-xl font-semibold mb-4">Quick Links</h4>
-            <div className="space-y-2">
-              <button 
-                onClick={() => handleNavigation('about')} 
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                About
-              </button>
-              <button 
-                onClick={() => handleNavigation('skills')} 
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                Skills
-              </button>
-              <button 
-                onClick={() => handleNavigation('projects')} 
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                Projects
-              </button>
-              <button 
-                onClick={() => handleNavigation('contact')} 
-                className="block text-gray-300 hover:text-white transition-colors"
-              >
-                Contact
-              </button>
-            </div>
-          </div>
-          
+        <div className="mx-auto w-fit">                    
           <div>
             <h4 className="font-serif text-xl font-semibold mb-4">Connect</h4>
             <div className="flex space-x-4">
               <a 
-                href="https://github.com" 
+                href="https://github.com/enzofgomes" 
                 className="text-gray-300 hover:text-white transition-colors text-xl"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -83,7 +46,7 @@ export default function Footer() {
                 <Github className="w-6 h-6" />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/in/enzo-gomes07" 
                 className="text-gray-300 hover:text-white transition-colors text-xl"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -91,15 +54,7 @@ export default function Footer() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a 
-                href="https://twitter.com" 
-                className="text-gray-300 hover:text-white transition-colors text-xl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Twitter className="w-6 h-6" />
-              </a>
-              <a 
-                href="mailto:contact@example.com" 
+                href="mailto:enzoogo07@gmail.com" 
                 className="text-gray-300 hover:text-white transition-colors text-xl"
               >
                 <Mail className="w-6 h-6" />
@@ -110,7 +65,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 mt-12 pt-8 text-center">
           <p className="text-gray-300">
-            © 2024 Portfolio. Built with passion and lots of coffee ☕
+            © 2025 Enzo Gomes. All rights reserved.
           </p>
         </div>
       </div>
