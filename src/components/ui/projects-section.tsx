@@ -19,7 +19,7 @@ export default function ProjectsSection() {
       description: "A browser-based version of the classic Asteroids arcade game, built entirely with vanilla JavaScript, HTML5 Canvas, and custom audio effects. The game features smooth animations, collision detection, modular code structure, and an interactive start menu.",
       image: "/assets/Asteroids-game.png",
       imageAlt: "Asteroids game screenshot",
-      link: "https://asteroids-java-script-azfqje1bw-enzofgomes-projects.vercel.app",
+      link: "https://enzofgomes.github.io/Asteroids_JavaScript/",
       githubLink: "https://github.com/enzofgomes/Asteroids_JavaScript",
       reversed: true
     },
