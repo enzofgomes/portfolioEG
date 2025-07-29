@@ -34,29 +34,6 @@
   --portfolio-accent: hsl(4, 90%, 58%);
 }
 
-.dark {
-  --background: hsl(240, 10%, 3.9%);
-  --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(240, 10%, 3.9%);
-  --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
-  --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(197, 71%, 73%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(185, 39%, 48%);
-  --secondary-foreground: hsl(0, 0%, 100%);
-  --accent: hsl(4, 90%, 58%);
-  --accent-foreground: hsl(0, 0%, 100%);
-  --destructive: hsl(0, 62.8%, 30.6%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(240, 4.9%, 83.9%);
-  --radius: 0.5rem;
-}
-
 @layer base {
   * {
     @apply border-border;
@@ -82,7 +59,7 @@
     opacity: 0.1;
     pointer-events: none;
     border-radius: 50px;
-    background: hsl(0, 0%, 80%);
+    background: hsl(231, 73%, 48%);
     animation: float 6s ease-in-out infinite;
   }
 
