@@ -94,7 +94,7 @@ export default function About() {
                     playing with computers when I was little, and since then I've been exploring the world of software. Making solutions has always felt second nature to me.
                   </p>
                   <p>
-                    What fascinates me the most about software development are the edless possibilities. Every project is a puzzle waiting to be solved, and door 
+                    What fascinates me the most about software development are the endless possibilities. Every project is a puzzle waiting to be solved, and a door 
                     to new learning opportunities. 
                     I believe that the best software is the one built with genuine empathy for the people who will use it.
                   </p>
