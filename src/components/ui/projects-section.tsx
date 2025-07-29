@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 export default function ProjectsSection() {
   const projects = [
@@ -7,39 +7,43 @@ export default function ProjectsSection() {
       title: "Stock Tracker",
       technologies: ["Python", "Flask", "API Integration", "CSS", "JavaScript", "HTML"],
       description: "A Flask-based web application that allows users to search for detailed stock market data using the Yahoo Finance API. Built with Python and Flask, the app retrieves real-time stock information and displays it in a clean, user-friendly interface.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Refy mortgage broker application dashboard",
-      link: ""
+      image: "assets/Stock-tracker.png",
+      imageAlt: "Stock Tracker APP screenshot",
+      link: "https://stocktracker-dcyg.onrender.com",
+      githubLink: "https://github.com/enzofgomes/StockTracker"
     },
     {
       category: "Personal Project",
-      title: "Glee Factor",
-      technologies: ["gleefactor", "gatsby", "typescript", "redux", "wordpress", "JavaScript", "google pay"],
-      description: "I took their existing wordpress site and turned it into a headless CMS with React on the frontend. The site features e-commerce, downloads and a seamless bilingual experience.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Glee Factor e-commerce website",
-      link: "#",
+      title: "Asteroidz.io",
+      technologies: ["JavaScript", "HTML"],
+      description: "A browser-based version of the classic Asteroids arcade game, built entirely with vanilla JavaScript, HTML5 Canvas, and custom audio effects. The game features smooth animations, collision detection, modular code structure, and an interactive start menu.",
+      image: "assets/Asteroids-game.png",
+      imageAlt: "Asteroids game screenshot",
+      link: "https://asteroids-java-script-azfqje1bw-enzofgomes-projects.vercel.app",
+      githubLink: "https://github.com/enzofgomes/Asteroids_JavaScript",
       reversed: true
     },
-    {
-      category: "Personal Project",
-      title: "ING Creatives",
-      technologies: ["ing", "ingcreatives", "gatsby", "shopify", "JavaScript"],
-      description: "I built the latest version of the site to improve speed and performance. It features statically generated pages, cloud image resizing and a custom CMS.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "ING Creatives agency website",
-      link: "#"
-    },
-    {
-      category: "PERSONAL PROJECT",
-      title: "Moving day",
-      technologies: ["movingday", "montreal", "react", "JavaScript", "google maps"],
-      description: "Looking for an apartment in Montreal is quite a pain. Since Kijiji doesn't provide a public API, I made one that runs on a local server.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Moving Day apartment finder application",
-      link: "#",
-      reversed: true
-    },
+    // {
+     // category: "Personal Project",
+     // title: "#",
+     // technologies: [],
+     // description: "#",
+     // image: "#",
+     // imageAlt: "#",
+     // link: "#",
+     // githubLink: "#"
+    // },
+    // {
+     // category: "Personal Project",
+     // title: "#",
+     // technologies: [],
+     // description: "#",
+     // image: "#",
+     // imageAlt: "#",
+     // link: "#",
+     // githubLink: "#",
+     // reversed: true
+    // },
   ];
 
   return (
@@ -76,15 +80,25 @@ export default function ProjectsSection() {
                     {project.description}
                   </p>
                   
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 bg-portfolio-primary text-white rounded-full font-medium hover:bg-portfolio-accent transition-colors"
-                  >
-                    View project
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </a>
+                  <div className="flex items-center gap-6">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-6 py-3 bg-portfolio-primary text-white rounded-full font-medium hover:bg-portfolio-accent transition-colors"
+                    >
+                      View project
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-portfolio-text font-medium hover:text-portfolio-primary transition-colors"
+                    >
+                      <Github className="w-5 h-5 mr-2" />                     
+                    </a>
+                  </div>
                 </div>
                 
                 <div className={project.reversed ? 'lg:col-start-1' : ''}>
