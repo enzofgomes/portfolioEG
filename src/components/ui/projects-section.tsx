@@ -3,29 +3,32 @@ import { ArrowRight } from "lucide-react";
 export default function ProjectsSection() {
   const projects = [
     {
-      category: "FULL STACK DEVELOPER / TECH LEAD",
-      title: "Refy: AI powered mortgage broker",
-      technologies: ["nextjs", "typescript", "graphql", "apollo", "react"],
-      description: "Assembled and lead a team of 8 developers to create core features and integrate third party APIs. Implemented CI/CD pipeline with Typescript type-checking, database migration, code linting and preview deploys.",
+      category: "Personal Project",
+      title: "Stock Tracker",
+      technologies: ["Python", "Flask", "API Integration", "CSS", "JavaScript", "HTML"],
+      description: "A Flask-based web application that allows users to search for detailed stock market data using the Yahoo Finance API. Built with Python and Flask, the app retrieves real-time stock information and displays it in a clean, user-friendly interface.",
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Refy mortgage broker application dashboard"
+      imageAlt: "Refy mortgage broker application dashboard",
+      link: "https://github.com/enzofgomes/StockTracker"
     },
     {
-      category: "FULL STACK DEVELOPER / TECH LEAD",
+      category: "Personal Project",
       title: "Glee Factor",
       technologies: ["gleefactor", "gatsby", "typescript", "redux", "wordpress", "JavaScript", "google pay"],
       description: "I took their existing wordpress site and turned it into a headless CMS with React on the frontend. The site features e-commerce, downloads and a seamless bilingual experience.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
       imageAlt: "Glee Factor e-commerce website",
+      link: "#",
       reversed: true
     },
     {
-      category: "FULL STACK DEVELOPER / TECH LEAD",
+      category: "Personal Project",
       title: "ING Creatives",
       technologies: ["ing", "ingcreatives", "gatsby", "shopify", "JavaScript"],
       description: "I built the latest version of the site to improve speed and performance. It features statically generated pages, cloud image resizing and a custom CMS.",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "ING Creatives agency website"
+      imageAlt: "ING Creatives agency website",
+      link: "#"
     },
     {
       category: "PERSONAL PROJECT",
@@ -34,16 +37,9 @@ export default function ProjectsSection() {
       description: "Looking for an apartment in Montreal is quite a pain. Since Kijiji doesn't provide a public API, I made one that runs on a local server.",
       image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
       imageAlt: "Moving Day apartment finder application",
+      link: "#",
       reversed: true
     },
-    {
-      category: "PERSONAL PROJECT",
-      title: "Wodly: Home fitness app",
-      technologies: ["react", "firebase", "JavaScript"],
-      description: "Save your home workouts and display them in a friendly manner. Share with your friends!",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500",
-      imageAlt: "Wodly home fitness application"
-    }
   ];
 
   return (
@@ -80,10 +76,15 @@ export default function ProjectsSection() {
                     {project.description}
                   </p>
                   
-                  <button className="inline-flex items-center px-6 py-3 bg-portfolio-primary text-white rounded-full font-medium hover:bg-portfolio-accent transition-colors">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-6 py-3 bg-portfolio-primary text-white rounded-full font-medium hover:bg-portfolio-accent transition-colors"
+                  >
                     View project
                     <ArrowRight className="w-4 h-4 ml-2" />
-                  </button>
+                  </a>
                 </div>
                 
                 <div className={project.reversed ? 'lg:col-start-1' : ''}>
