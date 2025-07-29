@@ -31,7 +31,7 @@
   --portfolio-secondary: hsl(185, 39%, 48%);
   --portfolio-text: hsl(0, 0%, 6.7%);
   --portfolio-muted: hsl(0, 0%, 37.3%);
-  --portfolio-accent: hsl(4, 90%, 58%);
+  --portfolio-accent: hsl(55, 80%, 65%);
 }
 
 @layer base {
