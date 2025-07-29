@@ -81,7 +81,7 @@ export default function About() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
                 <img
-                  src="public/assets/profile-picture.png"
+                  src="/assets/profile-picture.png"
                   alt="My picture"
                   className="w-full max-w-md rounded-2xl shadow-xl mx-auto object-cover" 
                 />

@@ -28,7 +28,7 @@ export default function SkillsSection() {
           
           <div className="text-center lg:text-left">
             <img 
-              src="public/assets/profile-picture.png" 
+              src="/assets/profile-picture.png" 
               alt="My picture" 
               className="w-64 h-64 rounded-2xl shadow-lg mx-auto lg:mx-0 mb-8 object-cover" 
             />
