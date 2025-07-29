@@ -5,56 +5,56 @@ import { useEffect } from "react";
 
 export default function About() {
   useEffect(() => {
-    document.title = "About - Portfolio | Full Stack Developer";
+    document.title = "About Enzo Gomes";
   }, []);
   const milestones = [
     {
-      year: "2010",
-      title: "Started Programming",
-      description: "Began my journey with computers at age 11, falling in love with the endless possibilities of code."
-    },
-    {
-      year: "2015",
-      title: "First Professional Project",
-      description: "Built my first commercial website, discovering the joy of bringing ideas to life through technology."
-    },
-    {
       year: "2018",
-      title: "Full Stack Developer",
-      description: "Transitioned to full-stack development, mastering both frontend and backend technologies."
+      title: "Started Learning Programming",
+      description: "Began my journey with programming at age 14, falling in love with the endless possibilities of code."
     },
     {
-      year: "2020",
-      title: "Tech Lead",
-      description: "Led my first development team, learning the importance of mentorship and collaborative problem-solving."
+      year: "2022",
+      title: "Began my Bachelor's Degree in IT",
+      description: "Started my formal education in Information Technology deepening my understanding of software development with the coursework."
     },
     {
       year: "2024",
-      title: "Present Day",
-      description: "Continuing to explore new technologies while building scalable solutions for complex problems."
+      title: "Participated in my First Team Project",
+      description: "Transitioned my focus to full-stack development, apliying both frontend and backend technologies."
+    },
+    {
+      year: "2025",
+      title: "Research Lab",
+      description: "Learned the importance of mentorship and collaborative problem-solving in a real-life scenario."
+    },
+    {
+      year: "2025",
+      title: "Portfolio Expansion",
+      description: "Worked in a series of personal projects to showcase myskills and creativity"
     }
   ];
 
   const interests = [
     {
       icon: Code,
-      title: "Clean Code",
-      description: "Passionate about writing maintainable, readable code that stands the test of time."
+      title: "Teamwork",
+      description: "Writing maintainable, readable code along with a professional team."
     },
     {
       icon: Heart,
       title: "User Experience",
-      description: "Believe that great technology should be invisible - intuitive and delightful to use."
+      description: "Building a user focused experience with clean UI Designs."
     },
     {
       icon: MapPin,
       title: "Remote Collaboration",
-      description: "Expert at building strong relationships and delivering results across distributed teams."
+      description: "Building strong relationships across spaces."
     },
     {
       icon: Calendar,
       title: "Continuous Learning",
-      description: "Always exploring new frameworks, tools, and methodologies to stay at the cutting edge."
+      description: "Always exploring new frameworks, tools to stay at the cutting edge."
     }
   ];
 
@@ -70,7 +70,7 @@ export default function About() {
               About <span className="text-portfolio-primary">Me</span>
             </h1>
             <p className="text-xl md:text-2xl text-portfolio-muted leading-relaxed">
-              A passionate software engineer with over a decade of experience building digital experiences that matter.
+             I like to come up with a solution to every problem I face.
             </p>
           </div>
         </section>
@@ -87,18 +87,20 @@ export default function About() {
                 />
               </div>
               <div>
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-portfolio-text mb-6">
-                  My Journey
-                </h2>
                 <div className="space-y-6 text-portfolio-muted leading-relaxed">
                   <p>
-                    I started playing with computers when I was 11 years old. Since then I have been tinkering with all sorts of technologies that in some way or another led me to work on music, photography, sound engineering, electric engineering, automation, video production, feature film post-production, VR games, and 3D sound.
+                    I'm a highly dedicated software developer currently completing my bachelor's degree in IT at Florida International University. I have always had a deep
+                    fascination with how things worked. I started 
+                    playing with computers when I was little, and since then I've been exploring the world of software. Making solutions has always felt second nature to me.
                   </p>
                   <p>
-                    What fascinates me most about software development is the intersection of creativity and logic. Every project is a puzzle waiting to be solved, and every solution opens doors to new possibilities. I believe that the best software is built when technical excellence meets genuine empathy for the people who will use it.
+                    What fascinates me the most about software development are the edless possibilities. Every project is a puzzle waiting to be solved, and door 
+                    to new learning opportunities. 
+                    I believe that the best software is the one built with genuine empathy for the people who will use it.
                   </p>
                   <p>
-                    When I'm not coding, you'll find me exploring new technologies, contributing to open source projects, or perfecting my Neapolitan pizza recipe. I'm a firm believer that the best ideas often come when you step away from the screen.
+                    In my free time, away from the screen, I like to enjoy myself by playing some music, reading random curiosities or just relaxing with my friends
+                    and family.
                   </p>
                 </div>
               </div>
@@ -110,7 +112,7 @@ export default function About() {
         <section className="py-20">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-portfolio-text mb-16 text-center">
-              Professional Timeline
+              My Journey
             </h2>
             <div className="space-y-12">
               {milestones.map((milestone, index) => (
@@ -138,7 +140,7 @@ export default function About() {
         <section className="py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-portfolio-text mb-16 text-center">
-              What Drives Me
+              What Interests Me
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {interests.map((interest, index) => {
@@ -168,10 +170,12 @@ export default function About() {
               My Philosophy
             </h2>
             <blockquote className="text-xl md:text-2xl text-portfolio-muted leading-relaxed italic mb-8">
-              "Great software isn't just about the code you write—it's about the problems you solve and the people whose lives you make a little bit better."
+              "Every great developer you know got there by solving problems they were unqualified to solve until they actually did it."
             </blockquote>
             <p className="text-portfolio-muted leading-relaxed max-w-2xl mx-auto">
-              I believe in building software that not only works flawlessly but also brings joy to the people who use it. Every line of code is an opportunity to create something meaningful, and every project is a chance to push the boundaries of what's possible.
+               I believe the best developers aren’t born experts, they become great by diving into challenges they weren’t yet ready for and figuring 
+               things out along the way. To me, every problem is an opportunity to grow, every bug is a lesson, and every project is a chance to create
+               something that matters.            
             </p>
           </div>
         </section>
