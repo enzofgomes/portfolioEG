@@ -7,7 +7,7 @@ export default function ProjectsSection() {
       title: "Stock Tracker",
       technologies: ["Python", "Flask", "API Integration", "CSS", "JavaScript", "HTML"],
       description: "A Flask-based web application that allows users to search for detailed stock market data using the Yahoo Finance API. Built with Python and Flask, the app retrieves real-time stock information and displays it in a clean, user-friendly interface.",
-      image: "assets/Stock-tracker.png",
+      image: "/assets/Stock-tracker.png",
       imageAlt: "Stock Tracker APP screenshot",
       link: "https://stocktracker-dcyg.onrender.com",
       githubLink: "https://github.com/enzofgomes/StockTracker"
@@ -17,7 +17,7 @@ export default function ProjectsSection() {
       title: "Asteroidz.io",
       technologies: ["JavaScript", "HTML"],
       description: "A browser-based version of the classic Asteroids arcade game, built entirely with vanilla JavaScript, HTML5 Canvas, and custom audio effects. The game features smooth animations, collision detection, modular code structure, and an interactive start menu.",
-      image: "assets/Asteroids-game.png",
+      image: "/assets/Asteroids-game.png",
       imageAlt: "Asteroids game screenshot",
       link: "https://asteroids-java-script-azfqje1bw-enzofgomes-projects.vercel.app",
       githubLink: "https://github.com/enzofgomes/Asteroids_JavaScript",
@@ -95,8 +95,10 @@ export default function ProjectsSection() {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-portfolio-text font-medium hover:text-portfolio-primary transition-colors"
+                      aria-label="View source code on GitHub"
+                      title="View source code on GitHub"
                     >
-                      <Github className="w-5 h-5 mr-2" />                     
+                      <Github className="w-5 h-5" />
                     </a>
                   </div>
                 </div>
