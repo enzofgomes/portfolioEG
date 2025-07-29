@@ -35,20 +35,19 @@ export default function SkillsSection() {
             />
             
             <h3 className="font-serif text-2xl font-semibold text-portfolio-text mb-4">
-              I love building stuff 📱
+              I love creating ✎𓂃
             </h3>
             <p className="text-portfolio-muted leading-relaxed mb-6">
-              I started playing with computers when I was 11 years-old. Since then I have been tinkering with all sorts of technologies that in some way or another led me to work on music, photography, sound engineering, electric engineering, automation, video production, feature film post-production, VR games, and 3D sound.
+              I'm a highly dedicated software developer currently completing my bachelor's degree in IT at Florida International University. 
+            I started playing with computers when I was little, and since then I've been exploring technologies. Building software has always been my dream.
             </p>
-            <button 
-              onClick={() => {
-                const element = document.getElementById('about');
-                if (element) element.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="text-portfolio-primary hover:text-portfolio-secondary transition-colors font-medium"
+            <a
+            href="/about"
+            className="text-portfolio-primary hover:text-portfolio-text transition-colors font-semibold"
             >
-              Keep reading my bio →
-            </button>
+              Keep reading about me →
+            </a>
+          
           </div>
         </div>
       </div>

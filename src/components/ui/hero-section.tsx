@@ -41,7 +41,7 @@ export default function HeroSection() {
 
           <p className="text-lg md:text-xl text-portfolio-muted max-w-2xl mx-auto leading-relaxed">
             Nice to meet you! <br />
-            I love being creative, i am always looking to learn new technologies and expand my skill set building innovative software 🤓
+            I am always looking to learn new technologies to expand my skill set in building innovative software 🤓
           </p>
         </div>
       </div>
