@@ -10,7 +10,7 @@ export default function HeroSection() {
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-portfolio-text mb-8 leading-tight">
             Hi,<br />
             I'm <span className="text-portfolio-primary">Enzo</span><br />
-            <span className="text-portfolio-muted">Software</span><br />
+            <span className="font-sans font-normal text-3xl md:text-4xl">Software</span>
             <span className="font-sans font-normal text-3xl md:text-4xl">Developer</span>
           </h1>
           
