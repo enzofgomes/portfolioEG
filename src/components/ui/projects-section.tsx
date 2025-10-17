@@ -3,14 +3,14 @@ import { ArrowRight, Github } from "lucide-react";
 export default function ProjectsSection() {
   const projects = [
     {
-      category: "Personal Project",
-      title: "Stock Tracker",
-      technologies: ["Python", "Flask", "API Integration", "CSS", "JavaScript", "HTML"],
-      description: "A Flask-based web application that allows users to search for detailed stock market data using the Yahoo Finance API. Built with Python and Flask, the app retrieves real-time stock information and displays it in a clean, user-friendly interface.",
-      image: "/assets/Stock-tracker.png",
-      imageAlt: "Stock Tracker APP screenshot",
-      link: "https://stocktracker-dcyg.onrender.com",
-      githubLink: "https://github.com/enzofgomes/StockTracker"
+      category: "Personal Project -Shellhacks 2025 3rd place winner",
+      title: "ClariTA",
+      technologies: ["Node.js", "React", "Gemini API", "Express", "PostregeSQL", "CSS", "TypeScript"],
+      description: "An AI T.A. powered by the Gemini API, made to help users study and understand the material they are learning by turning any PDF into interactive personalized tests delivering instant feedback.",
+      image: "/assets/ClariTA.png",
+      imageAlt: "ClariTA APP screenshot",
+      link: "https://clarita-teaching-assistant.onrender.com",
+      githubLink: "https://github.com/enzofgomes/ClariTA-Teaching-Assistant"
     },
     {
       category: "Personal Project",
@@ -23,16 +23,16 @@ export default function ProjectsSection() {
       githubLink: "https://github.com/enzofgomes/Asteroids_JavaScript",
       reversed: true
     },
-    // {
-     // category: "Personal Project",
-     // title: "#",
-     // technologies: [],
-     // description: "#",
-     // image: "#",
-     // imageAlt: "#",
-     // link: "#",
-     // githubLink: "#"
-    // },
+    {
+      category: "Personal Project",
+      title: "Stock Tracker",
+      technologies: ["Python", "Flask", "API Integration", "CSS", "JavaScript", "HTML"],
+      description: "A Flask-based web application that allows users to search for detailed stock market data using the Yahoo Finance API. Built with Python and Flask, the app retrieves real-time stock information and displays it in a clean, user-friendly interface.",
+      image: "/assets/Stock-tracker.png",
+      imageAlt: "Stock Tracker APP screenshot",
+      link: "https://stocktracker-dcyg.onrender.com",
+      githubLink: "https://github.com/enzofgomes/StockTracker"
+    },
     // {
      // category: "Personal Project",
      // title: "#",
