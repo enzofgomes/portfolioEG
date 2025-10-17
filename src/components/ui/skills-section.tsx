@@ -1,7 +1,7 @@
 export default function SkillsSection() {
   const technologies = [
     "TypeScript", "React", "Node.js", "Flask", "Next.js", "Vite", "CSS", "JavaScript", "Java", 
-    "Python", "HTML", "PostgreSQL", "MySQL", "Docker", "GitHub", "Tailwind CSS"
+    "Python", "HTML", "PostgreSQL", "MySQL", "Docker", "Tailwind CSS"
   ];
 
   return (
